@@ -1,0 +1,19 @@
+@use "../abstracts" as *;
+
+body.ej3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+}
+
+.container {
+   align-self: start;
+   margin-top: rem(150);
+    
+}
+
+#lista .button{
+    padding: 5px;
+    margin-bottom: 5px;
+}

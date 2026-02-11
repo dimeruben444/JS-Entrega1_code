@@ -1,0 +1,42 @@
+@use "variables" as *;
+
+// media query
+@mixin bp($key) {
+  $size: map-get($breakpoints, $key);
+
+  @if ($size) {
+    @media (width > $size) {
+      @content;
+    }
+  } @else {
+    @error '`#{$key}` does not exist in the $breakpoints';
+  }
+}
+
+// cortar contenido en x lineas "@include line-clamp(3)"
+@mixin line-clamp($row-number) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $row-number;
+  overflow: hidden;
+}
+
+@mixin btn-reset {
+  // boton base   "@extend %btn;"
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+@mixin ul-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  li a{
+    text-decoration: none;
+    color: var(--clr-text);
+
+  }
+}
+
+
