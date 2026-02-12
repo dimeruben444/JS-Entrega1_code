@@ -6,23 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
   </head>
-  <body>
+
+  <body class="ej4">
     <header>
-      <h1>Ejercicio 2 <span>Cambiar color de fondo</span> </h1>
+      <h1>Ejercicio 4 <span>Filtro de Búsqueda en Tiempo Real </span> </h1>
       <nav>
         <a href="index.html">Home</a>
         <div>
-        <a href="ejercicio2.html"> &lt;- Ejercicio anterior </a> 
-        <a href="ejercicio3.html">Siguiente ejercicio -></a> 
+        <a href="ejercicio3.html"> &lt;- Ejercicio anterior </a> 
+        <a href="ejercicio5.html">Siguiente ejercicio -></a> 
         </div>
       </nav>
       <p>
         Ejercicio: 
-        Crea una página con un botón que diga "Contar clics" y un texto inicial que muestre "Clics: 0". Cada 
-        vez que se haga clic en el botón, el texto debe actualizarse para mostrar el número total de clics 
-        realizados. 
+        Crea una página con un campo de texto y una lista predefinida de elementos.  
+        <p>● Mientras el usuario escribe en el campo, la lista debe actualizarse en tiempo real para mostrar solo los elementos que contienen el texto escrito.</p> 
+        <p>Ejemplo: Si la lista contiene ["Perro", "Gato", "Pez"] y el usuario escribe "Ga", solo "Gato" debe quedar visible.  </p>
       </p>
     </header>
+
+    <section class="container">
+      
+      <form action="">
+        <label for="buscar">Buscar</label> <br>
+        <input type="text" id="buscar" required>
+      </form>
+
+      <ul id="lista">
+        <li>Gato</li>
+        <li>Gazpacho</li>
+        <li>Perro</li>
+        <li>Pez</li>
+      </ul>
+
+    </section>
+
+
+
+
+
+
     <script type="module" src="/src/main.js"></script>  
     <script type="module" src="/src/ejercicio4.js"></script>
   </body>

@@ -1,0 +1,13 @@
+@use "../abstracts" as *;
+
+body.ej4 , body.ej5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+
+}
+
+
+.button{
+    margin-top: 10px;
+}
