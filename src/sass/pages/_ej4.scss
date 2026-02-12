@@ -1,13 +1,40 @@
 @use "../abstracts" as *;
 
-body.ej4 , body.ej5 {
+body.ej4 , body.ej5   {
     display: grid;
     grid-template-columns: 1fr 1fr;
     
 
 }
 
+body.ej6 , 
+body.ej7,
+body.ej8,
+body.ej9
+ {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 4.4rem;
+    
+}
+
 
 .button{
     margin-top: 10px;
+}
+
+
+.ej6 .container form input{
+    text-align: center;
+    
+}
+
+#generar{
+    margin-bottom: 15px;
+}
+
+.container{
+    border: 2px solid ;
+    padding: 10px;
+    
 }

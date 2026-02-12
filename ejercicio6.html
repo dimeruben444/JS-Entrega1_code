@@ -6,23 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
   </head>
-  <body>
+
+  <body class="ej6">
     <header>
-      <h1>Ejercicio 2 <span>Cambiar color de fondo</span> </h1>
+      <h1>Ejercicio 6 <span>Temporizador con Inicio, Pausa y Reinicio </span> </h1>
       <nav>
         <a href="index.html">Home</a>
         <div>
-        <a href="ejercicio2.html"> &lt;- Ejercicio anterior </a> 
-        <a href="ejercicio3.html">Siguiente ejercicio -></a> 
+        <a href="ejercicio5.html"> &lt;- Ejercicio anterior </a> 
+        <a href="ejercicio7.html">Siguiente ejercicio -></a> 
         </div>
       </nav>
       <p>
         Ejercicio: 
-        Crea una página con un botón que diga "Contar clics" y un texto inicial que muestre "Clics: 0". Cada 
-        vez que se haga clic en el botón, el texto debe actualizarse para mostrar el número total de clics 
-        realizados. 
+        Crea una página con un temporizador que comience en 00:00:00. Incluye tres botones: “Iniciar”, “Pausar” y “Reiniciar”. 
+        <p>● Al hacer clic en “Iniciar”, el temporizador debe comenzar a contar los segundos, minutos y horas. </p> 
+        <p>● “Pausar” detiene el conteo pero mantiene el tiempo actual.</p>
+        <p>• “Reiniciar” pone el temporizador en 00:00:00.</p>
       </p>
     </header>
+
+    <section class="container">
+      <h2>Temporizador</h2>
+
+      
+      <form action="">
+    
+        <input type="number" id="horas" name="horas" min="0" max="100" readonly>
+
+        <span>:</span>
+
+        <input type="number" id="minutos" name="minutos" min="0" max="100" readonly>
+
+        <span>:</span>
+
+        <input type="number" id="segundos" name="segundos" min="0" max="100" readonly><br>
+
+        <button id="start" class="button" >Start</button>
+        <button id="stop" class="button">Stop &#8203; </button>
+        <button id="reset" class="button">Reset</button>
+        
+
+
+      </form>
+
+     
+
+    </section>
+
+
+
+
+
+
     <script type="module" src="/src/main.js"></script>  
     <script type="module" src="/src/ejercicio6.js"></script>
   </body>

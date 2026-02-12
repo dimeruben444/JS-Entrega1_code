@@ -6,24 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
   </head>
-  <body>
+  <body class="ej9">
     <header>
-      <h1>Ejercicio 2 <span>Cambiar color de fondo</span> </h1>
+      <h1>Ejercicio 9 <span> Lista de Tareas con LocalStorage  </span> </h1>
       <nav>
         <a href="index.html">Home</a>
         <div>
-        <a href="ejercicio2.html"> &lt;- Ejercicio anterior </a> 
-        <a href="ejercicio3.html">Siguiente ejercicio -></a> 
+        <a href="ejercicio8.html"> &lt;- Ejercicio anterior </a> 
+        
         </div>
       </nav>
       <p>
         Ejercicio: 
-        Crea una página con un botón que diga "Contar clics" y un texto inicial que muestre "Clics: 0". Cada 
-        vez que se haga clic en el botón, el texto debe actualizarse para mostrar el número total de clics 
-        realizados. 
+        Crea una aplicación de lista de tareas.  
+        <p>• Cada tarea debe incluir un texto y un checkbox para marcarla como completada.</p>
+        <p>Las tareas se deben guardar en localStorage para que persistan incluso si la página se recarga. </p>
+        <p>Debe incluir un botón para limpiar todas las tareas completadas y actualizar el localStorage.</p>
       </p>
     </header>
+
+    <section class="container">
+      <h2>Generador Contraseña</h2>
+
+      
+      <form action="">
+    
+        <label for="tamaño">Longitud contraseña</label> <input type="number" id="tamaño" name="tamaño" min="0" max="1000" required><br>
+
+        <button id="generar" class="button" >Generar</button> <br>
+
+        <label for="pwd">Contraseña:</label>
+        <input type="text" id="pwd" name="pwd" size="30" readonly>
+
+        
+       
+
+        
+       
+        
+
+
+      </form>
+
+     
+
+    </section>
+
+
+
+
+
+
     <script type="module" src="/src/main.js"></script>  
-    <script type="module" src="/src/ejercicio9.js"></script>
+    <script  src="/src/ejercicio9.js"></script>
   </body>
 </html>

@@ -2,28 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
   </head>
-  <body>
+  <body class="ej7">
     <header>
-      <h1>Ejercicio 2 <span>Cambiar color de fondo</span> </h1>
+      <h1>Ejercicio 7 <span>Generador Contraseñas Aleatorias </span> </h1>
       <nav>
         <a href="index.html">Home</a>
         <div>
-        <a href="ejercicio2.html"> &lt;- Ejercicio anterior </a> 
-        <a href="ejercicio3.html">Siguiente ejercicio -></a> 
+        <a href="ejercicio6.html"> &lt;- Ejercicio anterior </a> 
+        <a href="ejercicio8.html">Siguiente ejercicio -></a> 
         </div>
       </nav>
       <p>
         Ejercicio: 
-        Crea una página con un botón que diga "Contar clics" y un texto inicial que muestre "Clics: 0". Cada 
-        vez que se haga clic en el botón, el texto debe actualizarse para mostrar el número total de clics 
-        realizados. 
+        Crea una página con un campo de entrada para especificar la longitud de una contraseña y un botón que diga “Generar contraseña”.  
+        <p>• Al hacer clic en el botón, se debe mostrar una contraseña generada aleatoriamente usando letras, números y caracteres especiales. </p>
+        <p>• Si la longitud es menor a 4 o el campo está vacío, muestra un mensaje de error indicando que la longitud debe ser mayor o igual a 4. </p>
       </p>
     </header>
+
+    <section class="container">
+      <h2>Generador Contraseña</h2>
+
+      
+      <form action="">
+    
+        <label for="tamaño">Longitud contraseña</label> <input type="number" id="tamaño" name="tamaño" min="0" max="1000" required><br>
+
+        <button id="generar" class="button" >Generar</button> <br>
+
+        <label for="pwd">Contraseña:</label>
+        <input type="text" id="pwd" name="pwd" size="30" readonly>
+
+        
+       
+
+        
+       
+        
+
+
+      </form>
+
+     
+
+    </section>
+
+
+
+
+
+
     <script type="module" src="/src/main.js"></script>  
-    <script type="module" src="/src/ejercicio7.js"></script>
+    <script  src="/src/ejercicio7.js"></script>
   </body>
 </html>
