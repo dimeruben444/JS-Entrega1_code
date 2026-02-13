@@ -10,11 +10,12 @@
     <header>
       <h1>Ejercicio 9 <span> Lista de Tareas con LocalStorage  </span> </h1>
       <nav>
-        <a href="index.html">Home</a>
-        <div>
+        <a href="index.html">Home</a><br>
+       
+        
         <a href="ejercicio8.html"> &lt;- Ejercicio anterior </a> 
         
-        </div>
+      
       </nav>
       <p>
         Ejercicio: 
@@ -26,35 +27,21 @@
     </header>
 
     <section class="container">
-      <h2>Generador Contraseña</h2>
-
+      <h2>Lista de Tareas con LocalStorage</h2>
       
-      <form action="">
-    
-        <label for="tamaño">Longitud contraseña</label> <input type="number" id="tamaño" name="tamaño" min="0" max="1000" required><br>
+      <form action="" >
 
-        <button id="generar" class="button" >Generar</button> <br>
+        <label for="tarea">Nueva tarea:</label> <br>
+        <input type="text" id="tarea" required>
 
-        <label for="pwd">Contraseña:</label>
-        <input type="text" id="pwd" name="pwd" size="30" readonly>
+        <button id="añadirBtn" class="button">Añadir</button>
 
-        
-       
-
-        
-       
-        
-
-
+         
       </form>
 
-     
-
+      <ul id="lista"></ul>
+      <button id="borrarBtn" class="button">Borrar Completados</button> 
     </section>
-
-
-
-
 
 
     <script type="module" src="/src/main.js"></script>  
